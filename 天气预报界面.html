@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天气预报界面</title>
+</head>
+<!-- 
+  1,盒子的布局如下
+  2，盒子的样式可以直接copy过去
+  3，盒子的排布不要动，整个页面代码复制到一个自己新的html中。直接把此页的css全部删除然后每一个人在自己的区域做就可以了，到时我根据你们的负责区域代码粘贴在这个html中
+  4，每一个人在自己设计的时候都要分文件夹，方便后期修改。css,js,imgs(图片文件夹)
+  5，设计css的选择器，要向下文一样在注释
+  6，加油！
+
+ -->
+<style>
+  /* 大盒子 */
+    .Container {
+      background-color: #f0f0f0;
+      padding: 10px;
+    }
+    /* 清除浮动 */
+    .clearfix:after 
+    {
+      content: "";
+      display: table;
+      clear: both;
+     }
+     /* 搜索框，logo */
+    .Logo,.Search {
+      float: left;
+      background-color: #e0e0e0;
+    }
+    /* 留给卢 */
+    .Item
+    {
+      float: right;
+      background-color: #e0e0e0;
+      margin-left: 20px;
+    }
+    .Logo{width: 50px; height: 40px; }
+    .Search{width:200px;height: 42px;margin-left: 500px;}
+    .Item{width: 50px; height: 40px;}
+   
+  /* 导航栏大盒子和li */
+    .NavBox .Nav li
+  {
+    position: static;
+    flex: 1;
+    width: 20px;
+    height: 25px;
+    margin: 0px 10px;
+    background-color: blue;
+    list-style: none;
+  }
+  /* ul的盒子 */
+    .Nav
+    {   display: flex;
+        flex-direction: row;
+        padding: 10px;
+        margin-left: 10px;
+        width: 600px;
+        /* height:30px ; */
+        background-color:skyblue;
+    }
+
+
+    /* 天气状况 */
+    .Introduction
+    {
+        width: 700px;
+        height: 300px;
+        margin-top: 60px;
+        margin-left: 400px;
+        background-color: bisque;
+    }
+
+
+    /* 一周天气大盒子 */
+    .DayBox
+    {
+        /* width: 800px; */
+        height: 200px;
+        margin-top: 40px;
+        background-color: rebeccapurple;
+    }
+
+    /* 一周天气小盒子 */
+    .DayBox>div
+    {   float: left;
+        width: 100px;
+        height: 200px;
+        margin-left: 10px;
+        background-color: #e0e0e0;   
+    }
+
+    /* 折线图 */
+    .Curve
+    {
+      float: left;
+      width: 700px;
+      height: 400px;
+      margin-left: 20px;
+      margin-top: 20px;
+      background-color: pink;
+    }
+
+    /* 城市天气排名 */
+    .Table
+    { 
+      float: right;
+      width: 500px;
+      height: 400px;
+      margin-top: 20px;
+      background-color: peru;
+    }
+
+
+    /* 轮播图 */
+    .Swiper
+    {
+        width: 900px;
+        height: 300px;
+        margin-top: 60px;
+        margin-left: 150px;
+        background-color: bisque;
+    }
+
+      /* 大盒子 */
+    .Index
+    { 
+      position: relative;
+      width: 1200px;  
+      height: 552px;
+      padding-left: 10px;
+      margin-left: 145px;
+      margin-top: 20px;
+      background-color: blue;
+         
+    }
+
+
+    /* 生活指数 */
+    .LivingIndex
+    {
+      position: absolute;
+      left: 88px;
+      width: 400px;
+      height: 500px;
+      top: 20px;
+      background-color: rgb(160, 98, 218);
+    }
+
+    /* 天气介绍 */
+    .Recommend
+    {
+      position: absolute;
+      left: 700px;
+      width: 300px;
+      height: 500px;
+      top: 20px;
+      margin-left: 100px;
+      background-color: rgb(56, 37, 19);
+    }
+
+/* 结束 */
+    .Ending
+    {
+      width: 1200px;
+      height: 500px;
+      margin-top: 20px;
+      margin-left: 113px;
+      background-color: rgb(154, 238, 194);
+    }
+   
+    
+  </style>
+ <body>
+    <div class="Container">
+        <div class="Logo">logo</div>
+        <div class="Search">search</div>
+        <div class="Item">item</div>
+        <div class="clearfix" ></div>
+        <!-- 以上卓part -->
+        <div class="NavBox">
+            <ul class="Nav">
+                <li >1</li>
+                <li >2</li>
+                <li >3</li>
+                <li >4</li>
+                <li >5</li>
+                <!-- 自主发挥li 标签 许-->
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+       <!-- 只放了父盒子，子盒子自由发挥 -->
+            <div class="Introduction">
+                123
+            </div>
+            <!-- 以上为莫part -->
+            <div class="DayBox">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <!-- 卓part -->
+
+
+            <div></div>
+            <div class="Curve"></div>
+            <!-- 卢part -->
+            <div class="Table">
+              <table>
+
+              </table>
+              <!-- 许part -->
+            </div>
+
+
+
+            <div class="clearfix"></div>
+            <div class="Swiper">
+            </div>
+            <!-- 卢part -->
+
+
+            <div class="Index">
+                  <div class="LivingIndex">
+                  </div>
+                  <div class="Recommend">
+
+                  </div>
+            </div>
+            <!-- 卓，卢part -->
+            <div class="Ending">
+
+            </div>
+            <!-- 许part -->
+      </div>
+
+       
+        
+</body>
+</html>
