@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>月亮轨迹图</title>
+</head>
+<style>
+#trajectory {
+    position: absolute;
+    top: 20%; /* 修改轨道的垂直位置，以调整轨道与月亮的相对位置 */
+    left: 35%;
+    width: 300px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px dashed rgb(48, 44, 44);
+    animation: orbit 10s linear infinite; /* 这里为了保持所有css属性名称一致，将动画名称 orbit 改为 #trajectory ,可以忽略 */
+    opacity: 0.5;
+  }
+
+     #moon {
+        position: absolute;
+        top: 15%;
+        left: 38%;
+        width: 100px;
+        height: 100px;
+        z-index: 1;
+        animation: moonOrbit 10s linear infinite;
+        background-color:transparent;
+        border-radius:50%;
+        box-shadow:20px 10px 0px 0px #FFFF00;
+        background: radial-gradient(circle, rgba(255,238,170,1) 10%, rgb(241, 223, 23) 60%, rgba(255,182,193,0) 100%), /* 修改背景色及纹理 */
+     }       
+
+   #moon:before, #moon:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: #FFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    clip-path: polygon(
+        50% 0%,
+        100% 25%,
+        100% 75%, /* 修改 clip-path 属性，剪裁出想要的月牙形状 */
+         50% 100%,
+        0% 75%,
+        0% 25%) 
+  } 
+  
+
+
+    @keyframes orbit {
+            0% {
+                transform: translateX(-100px) translateY(0px);
+            }
+            100% {
+                transform: translateX(100px) translateY(0px);
+            }
+        }
+
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes moonPath-animation {
+            0% {
+                transform: translateX(-100px) translateY(0px);
+            }
+            50% {
+                transform: translateX(0px) translateY(100px);
+            }
+            100% {
+                transform: translateX(100px) translateY(0px);
+            }
+        }
+
+        @keyframes moonOrbit {
+            from {
+                transform: rotate(0deg) translateX(-120px) rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg) translateX(-120px) rotate(-360deg);
+            }
+        }
+</style>
+  
+
+<body>
+<div id="trajectory"></div>
+<div id="moon"></div>
+<script>
+    var moon = document.querySelector('#moon');
+    var height = window.innerHeight / 2;
+    var width = window.innerWidth / 2;
+    moon.style.transformOrigin = `${-width}px ${-height}px`;
+
+    window.addEventListener('resize', () => {
+        var height = window.innerHeight / 2;
+        var width = window.innerWidth / 2;
+        moon.style.transformOrigin = `${-width}px ${-height}px`;
+    });
+</script>
+
+</body>
+
+
+</html>

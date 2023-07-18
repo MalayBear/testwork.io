@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./QWeather-Icons-1.3.2/font/qweather-icons.css">
+    <link rel="stylesheet" href="./css/简介框.css">
+</head>
+<body style="background:linear-gradient(80deg, #75b3f6, #fcffe8);">
+    <div class="Container">
+        <div class="Logo">logo</div>
+        <div class="Search">Search</div>
+        <div class="Item">item</div>
+        <div class="clearfix" ></div>
+        <!-- 以上卓part -->
+        <div class="NavBox">
+            <ul class="Nav">
+                <li >1</li>
+                <li >2</li>
+                <li >3</li>
+                <li >4</li>
+                <li >5</li>
+                <!-- 自主发挥li 标签 许-->
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+       <!-- 只放了父盒子，子盒子自由发挥 -->
+
+             <!-- 城市名称 -->
+            
+
+            <!-- 大盒子 -->
+            <div class="Introduction">
+              <div class="headcontries">
+                <h2>肇庆市</h2>  
+            </div>
+            <!-- 利用js更新实时时间 -->
+            <div class="time">
+              <div class="box"></div>
+
+              <!-- 时间js区域 -->
+              <script>
+                  function getTime() {
+                      var date = new Date();
+                      var year = date.getFullYear(); //获取年份
+                      var month = date.getMonth() + 1; //获取月份,getMonth()返回值是0-11,所以要加1
+                      var day = date.getDate(); //获取日期
+                      var hour = date.getHours(); //获取小时
+                      hour = hour < 10 ? '0' + hour : hour;
+                      var minute = date.getMinutes(); // 获取分
+                      minute = minute < 10 ? '0' + minute : minute;
+                      return year + '年' + month + '月' + day + '日&nbsp;' + hour + ':' + minute  ;
+                  }27
+                  // 函数调用多次设置间隔一秒刷新一次
+                  setInterval(function() {
+                      document.querySelector('.box').innerHTML = getTime();
+                  }, 1000)
+              </script>
+
+            </div>
+
+            <!-- 空气指数 -->
+            <div class="bt">
+              <a href="###"><button class="TQZL">AQI优</button></a>
+          </div>
+
+            <!-- 天气图标 -->
+            <div class="photo">
+              <img src="./晴.png">        
+            </div>
+
+            <!-- 温度 -->
+            <div class="wendu">
+              <h2>33℃</h2>
+            </div>
+
+            <!-- 体感温度 -->
+            <div class="tigan">
+              <p>体感温度:34℃</p>
+            </div>
+
+            <!-- 天气情况 -->
+            <div class="tianqi">
+              <p>晴🌤</p>
+            </div>
+
+            <!-- 天气具体详情 -->
+            <div class="NavBox1">
+              <ul class="Nav1">
+                  <li >风度
+                    <p>东北风 3级</p>
+                  </li>
+                  <li >湿度
+                    <p>71%</p>
+                  </li>
+                  <li >能见度
+                    <p>29.2 公里</p>
+                  </li>
+                  <li >气压
+                    <p>1004 hPa</p>
+                  </li>
+                  <li >露点
+                    <p>24°</p>
+                  </li>
+              </ul>
+              </div>
+                      
+            <!-- 以上为莫part -->
+            <div class="DayBox">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <!-- 卓part -->
+
+
+            <div></div>
+            <div class="Curve"></div>
+            <!-- 卢part -->
+            <div class="Table">
+              <table>
+
+              </table>
+              <!-- 许part -->
+            </div>
+
+
+
+            <div class="clearfix"></div>
+            <div class="Swiper">
+            </div>
+            <!-- 卢part -->
+
+
+            <div class="Index">
+                  <div class="LivingIndex">
+                  </div>
+
+                  <!-- 天气新闻资讯 -->
+                  <div class="Recommend">
+                    <div class="title"><strong>天气新闻资讯</strong></div>
+
+                  <!-- 更多资讯按钮 -->
+                    <div class="bt2">
+                      <a href="###"><span class="GDZX">更多资讯</span></a>
+                    </div> 
+
+                    <!-- 新闻1 --> 
+                  <div class="news-info">
+                    <a href="###">
+
+                    <!-- 标题 -->
+                    <h2 class="info-title" title="河南安徽等地仍有较强降雨南方大部闷热升级">
+                    河南安徽等地仍有较强降雨南方大部闷热升级
+                    </h2></a>
+                    
+                    <!-- 时间 -->
+                    <span class="update-time">
+                    2023-5-28
+                    </span>
+                    <!-- 新闻图 -->
+                    <div class="news-imgs">
+                    <img src="./新闻图/河南安徽.jpg">
+                    </div>
+                    <div class="underlines"></div>
+
+                    <!-- 新闻2 -->
+                    <div class="news-info">
+                    <a href="###">
+                    <!--标题  -->
+                    <h2 class="info-title" title="暴雨蓝色预警:7省市将现大到暴雨,安徽江苏部分地区...">
+                    暴雨蓝色预警:7省市将现大到暴雨,安徽江苏部分地区...
+                    </h2></a>
+                    <!-- 时间 -->
+                    <span class="update-time">
+                    2023-5-28
+                    </span>
+                    <!-- 新闻图 -->
+                    <div class="news-imgs">
+                    <img src="./新闻图/2.jpg">
+                    </div>
+                    <div class="underlines"></div>
+
+                    <!-- 新闻3 -->
+                    <div class="news-info">
+                    <a href="###">
+                    <!--标题  -->
+                    <h2 class="info-title" title="大雾黄色预警:渤海黄海等部分海域将出现大雾">
+                    大雾黄色预警:渤海黄海等部分海域将出现大雾
+                    </h2>
+                  </a>
+                    <!-- 时间 -->
+                    <span class="update-time">
+                    2023-5-28
+                    </span>
+                    <!-- 新闻图 -->
+                    <div class="news-imgs">
+                    <img src="./新闻图/3.jpg">
+                    </div>
+                    <div class="underlines"></div>
+
+                    <!-- 新闻4 -->
+                    <div class="news-info">
+                    <a href="###">
+                    <!-- 标题 -->
+                    <h2 class="info-title" title="今明两天背景晴朗在线 最高气温将达31℃">
+                    今明两天背景晴朗在线 最高气温将达31℃
+                    </h2>
+                    <!-- 时间 -->
+                    <span class="update-time">
+                    2023-5-28
+                    </span>
+                    <!-- 新闻图 -->
+                    <div class="news-imgs">
+                    <img src="./新闻图/4.jpg">
+                    </div></a>
+                    <div class="underlines"></div>
+
+                    <!-- 新闻5 -->
+                    <div class="news-info">
+                    <a href="###">
+                    <!-- 标题 -->
+                    <h2 class="info-title" title="河南安徽等地仍有较强降雨南方大部闷热升级">
+                    河南安徽等地仍有较强降雨南方大部闷热升级
+                    </h2></a>
+                    <!-- 时间 -->
+                    <span class="update-time">
+                    2023-5-28
+                    </span>
+                    <!-- 新闻图 -->
+                    <div class="news-imgs">
+                    <img src="./新闻图/河南安徽.jpg">
+                    </div>
+                    <div class="underlines"></div>
+
+                    </div>
+                  </div>
+                  </div>
+            </div>
+            <!-- 卓，卢part -->
+            <div class="Ending">
+
+            </div>
+            <!-- 许part -->
+      </div>    
+</body>
+</html>

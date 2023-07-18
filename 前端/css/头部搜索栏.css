@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #000;
+    padding: 0 10px;
+    /* 删除a标签的下划线 */
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?nnwiqf');
+    src: url('fonts/icomoon.eot?nnwiqf#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?nnwiqf') format('truetype'),
+        url('fonts/icomoon.woff?nnwiqf') format('woff'),
+        url('fonts/icomoon.svg?nnwiqf#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+/* 整个头部导航栏 */
+.navbar {
+    width: 100%;
+    /* 最小宽度，窗口缩小之后到1280px不会再缩小 */
+    min-width: 1280px;
+    box-sizing: border-box;
+    padding: 0 24px;
+    margin: 0 auto;
+    height: 48px;
+    line-height: 48px;
+    display: flex;
+    justify-content: space-between;
+    -webkit-box-pack: justify;
+    box-shadow: 0 2px 4px 0 rgb(0, 0, 0, 5%);
+}
+
+/* 头部导航栏左侧 */
+/* 网页logo */
+.logo {
+    position: relative;
+    float: left;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+/* logo图片 */
+.logo img {
+    width: 80px;
+    max-width: 80px;
+    height: 44px;
+    display: block;
+    margin-top: calc((48px - 44px)/ 2);
+}
+
+/* 头部导航栏中部 */
+.navbar-middle {
+    padding: 0 80px;
+    flex: 1;
+    width: 300px;
+}
+
+/* 搜索框 */
+.navbar-search {
+    max-width: 600px;
+    height: 32px;
+    line-height: 32px;
+    margin-top: calc((48px - 32px)/ 2);
+    box-sizing: border-box;
+    font-size: 0px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* 搜索框--文本部分 */
+.navbar-search input {
+    font-size: 14px;
+    display: inline-block;
+    width: calc(100% - 88px);
+    height: 100%;
+    line-height: inherit;
+    /* 为了后面聚焦搜索框样式，将边框外围线清除 */
+    outline: 0;
+    background: #f5f6f7;
+    color: #222226;
+    vertical-align: top;
+    text-indent: 16px;
+    border: 1px solid #e8e8ed;
+    border-right: none;
+    box-sizing: border-box;
+    border-radius: 16px 0 0 16px;
+}
+
+/* 搜索框聚焦样式 */
+.navbar-middle :focus {
+    border: 1px solid #fc5531;
+}
+
+/* 搜索框右侧 */
+.navbar-search button {
+    display: inline-block;
+    width: 88px;
+    height: 100%;
+    outline: 0;
+    border: 0 none;
+    border-radius: 0 16px 16px 0;
+    line-height: 32px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.navbar-search span {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    color: #000;
+    height: 35px;
+    font-size: 17px;
+    font-family: 'icomoon';
+    margin-left: 10px;
+}
+
+/* 右侧导航栏  */
+.navbar-right {
+    display: inline-block;
+    width: 100px;
+    margin-right: 30px;
+}
+
+/* 登录 */
+.user {
+    display: inline-block;
+}
+
+/* 登录字体 */
+.navbar-right p {
+    display: inline-block;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.navbar-right p:hover {
+    background-color: #eee;
+}
+
+/* 设置 */
+.install {
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    font-family: 'icomoon';
+    font-size: 20px;
+}
+
+.install p :hover {
+    background-color: #eee;
+}

@@ -1,0 +1,41 @@
+.Table
+{
+    float: left;
+    margin-left: 822px;
+    width: 407px;
+    height: 473px;
+    margin-top: -439px;
+    /* background-color: #ccc; */
+    padding: 10px;
+}
+
+table
+{
+width: 100%;
+border-collapse: collapse;
+}
+
+th, td
+{
+text-align: left;
+padding: 8px;
+}
+
+th
+{
+background-color: #8A2BE2;
+color: white;
+}
+
+tr:nth-child(even)
+{
+background-color: #f2f2f2;
+}
+
+ tr span
+{
+    display: block;
+    width: 33px;
+    height: 20px;
+    text-align: center;
+}

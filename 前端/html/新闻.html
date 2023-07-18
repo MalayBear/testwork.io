@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻</title>
+    <!-- 引入js轮播图 -->
+    <script src="../js轮播图引入/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="../js轮播图引入/swiper-bundle.min.css">
+    <script src="../js轮播图引入/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/新闻a.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+    <link rel="stylesheet" href="../css/最后的介绍.css">
+</head>
+<body style="background-color: #f3f3f3;">
+    <!-- js -->
+    <script type="text/javascript">
+        /*鼠标点击出现文字*/
+        $(document).ready(function(){
+            var a_index = 0;
+            $("body").click(function(e){
+                var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善");
+                var $i = $("<span/>").text(a[a_index]);
+                a_index = (a_index + 1) % a.length;
+                var x = e.pageX,y = e.pageY;
+                $i.css({
+                    "z-index": 99999,
+                    "top": y - 30,
+                    "left": x,
+                    "position": "absolute",
+                    "font-weight": "bold",
+                    "color": "#ff6651"
+                });
+                $("body").append($i);
+                $i.animate({"top": y-180,"opacity": 0},1500,function() {
+                    $i.remove();
+                });
+            });
+        });
+        </script>
+
+
+    <div class="dh">
+    <img src="../imgs/新闻图/dyh.png">
+    </div>
+  <!-- 导航栏2 -->
+    <div class="top2">
+    <div class="lead">
+    <ul>
+              <li><a href="C:\Users\win10\Desktop\天气\天气.html">首页</a></li>
+
+              <li><a href="https://www.msn.cn/zh-cn/weather/maps/radar/in-%E5%B9%BF%E4%B8%9C%E7%9C%81,%E8%82%87%E5%BA%86%E5%B8%82?loc=eyJsIjoi6byO5rmW5Yy6IiwiciI6IuW5v%2BS4nOecgSIsInIyIjoi6IKH5bqG5biCIiwiYyI6IuS4reWNjuS6uuawkeWFseWSjOWbvSIsImkiOiJDTiIsImciOiJ6aC1jbiIsIngiOiIxMTIuNTc0IiwieSI6IjIzLjE5NSJ9&weadegreetype=C&ocid=ansmsnweather">地图</a></li>
+      
+              <li><a href="https://www.msn.cn/zh-cn/weather/monthlyforecast/in-%E5%B9%BF%E4%B8%9C%E7%9C%81,%E8%82%87%E5%BA%86%E5%B8%82?loc=eyJsIjoi6byO5rmW5Yy6IiwiciI6IuW5v%2BS4nOecgSIsInIyIjoi6IKH5bqG5biCIiwiYyI6IuS4reWNjuS6uuawkeWFseWSjOWbvSIsImkiOiJDTiIsImciOiJ6aC1jbiIsIngiOiIxMTIuNTc0IiwieSI6IjIzLjE5NSJ9&weadegreetype=C&ocid=ansmsnweather">月度预报</a></li>
+      
+              <li><a href="https://www.msn.cn/zh-cn/weather/maps/severeweather/in-%E5%B9%BF%E4%B8%9C%E7%9C%81,%E8%82%87%E5%BA%86%E5%B8%82?loc=eyJsIjoi6byO5rmW5Yy6IiwiciI6IuW5v%2BS4nOecgSIsInIyIjoi6IKH5bqG5biCIiwiYyI6IuS4reWNjuS6uuawkeWFseWSjOWbvSIsImkiOiJDTiIsImciOiJ6aC1jbiIsIngiOiIxMTIuNTc0IiwieSI6IjIzLjE5NSJ9&weadegreetype=C&ocid=ansmsnweather">天气预警</a></li>
+      
+              <li><a href="https://www.msn.cn/zh-cn/weather/records/in-%E5%B9%BF%E4%B8%9C%E7%9C%81,%E8%82%87%E5%BA%86%E5%B8%82?loc=eyJsIjoi6byO5rmW5Yy6IiwiciI6IuW5v%2BS4nOecgSIsInIyIjoi6IKH5bqG5biCIiwiYyI6IuS4reWNjuS6uuawkeWFseWSjOWbvSIsImkiOiJDTiIsImciOiJ6aC1jbiIsIngiOiIxMTIuNTc0IiwieSI6IjIzLjE5NSJ9&weadegreetype=C&ocid=ansmsnweather">气温雨量统计</a></li>
+      
+              <li><a href="https://www.msn.cn/zh-cn/weather/maps/airquality/in-%E5%B9%BF%E4%B8%9C%E7%9C%81,%E8%82%87%E5%BA%86%E5%B8%82?loc=eyJsIjoi6byO5rmW5Yy6IiwiciI6IuW5v%2BS4nOecgSIsInIyIjoi6IKH5bqG5biCIiwiYyI6IuS4reWNjuS6uuawkeWFseWSjOWbvSIsImkiOiJDTiIsImciOiJ6aC1jbiIsIngiOiIxMTIuNTc0IiwieSI6IjIzLjE5NSJ9&weadegreetype=C&ocid=ansmsnweather">空气质量</a></li>
+
+              <li><a href="##">节气知识</a></li>
+
+              <li><a href="##">更多资讯</a></li>
+
+    </ul>
+    </div>
+        
+        
+    </div>
+    <!-- 导航结束 -->
+
+
+    <!-- 轮播图开始 -->
+    <div class="swiper myswiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="../imgs/新闻图/11.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="../imgs/新闻图/12.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="../imgs/新闻图/13.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="../imgs/新闻图/14.jpg" alt=""></div>
+
+        </div>
+        <!-- 滚动条 -->
+        <div class="swiper-scrollbar"></div>
+        <!-- 左右导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>   
+    </div>
+    <!-- 轮播图结束 -->
+
+
+   <!--商品详情  -->
+    <!-- 商品1小标题 -->
+      <div class="new">
+        <a href="###"><h2 class="title">新视野</h2></a>
+        <div class="underline1"></div>  
+      </div> 
+      
+      
+       <!-- 三个同时轮播 -->
+    <div class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><a href="###"><img src="../imgs/新闻图/16.jpg" alt=""></a></div>
+          <div class="swiper-slide"><a href="###"><img src="../imgs/新闻图/17.jpg" alt=""></a></div>
+          <div class="swiper-slide"><a href="###"><img src="../imgs/新闻图/18.jpg" alt=""></a></div>
+          <div class="swiper-slide"><a href="###"><img src="../imgs/新闻图/19.jpg" alt=""></a></div>
+          <div class="swiper-slide"><a href="###"><img src="../imgs/新闻图/20.jpg" alt=""></a></div>
+        </div>
+        <!-- 左右导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <!-- 滚动条 -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+    </div>
+
+ 
+    </div>
+    <!-- 中间新闻 -->
+    <div class="nn1">
+        <a href="http://www.weather.com.cn/zt/tqzt/3546652.shtml#p=1">
+            <img src="../imgs/新闻图/ym.jpg">
+        </a>
+    </div>
+    <div class="probig">
+    <div class="leftnews">
+        <div class="inside">
+        <h2>⚠西南等地雨水连连 北方下周高温发展</h2>
+       <ol>
+        <li><a href="#">未来三天北京晴朗在线紫外线强烈2023高考天气</a></li>
+        <li><a href="#">江苏降雨增强局部有暴雨 南京明日最高温降至21℃</a></li>
+        <li><a href="#">湖南今明两天雷阵雨频扰 湘西州怀化等局地有大雨</a></li>
+        <li><a href="#">湖北今明两天降雨频繁 西南部今夜将现大到暴雨</a></li>
+        <li><a href="#">我国首批四家“气象旅游研学营地”挂牌成立</a></li>
+        </ol>
+        <h2>📸河南汝州波斯菊绽放 花瓣如蝴蝶起舞</h2>
+        <ol>
+        <li><a href="#">福州各色荷花争奇斗艳 北京沙河水库初夏满眼绿</a></li>
+        <li><a href="#">河南平顶山金丝桃盛放 河北崇礼漫山遍野桃花开</a></li>
+        <li><a href="#"></a></li>
+        </ol></div>
+     <!-- 节气图片新闻 -->
+    <div class="GuangGao"><a href="https://e.weather.com.cn/mtqzt/3621780.shtml">
+        <img src="../imgs/新闻图/xm.png">
+    </a></div>
+
+    <div class="line"></div>
+     <!-- 天气新闻资讯 -->
+    <div class="Recommend">
+    <div class="title"><strong>天气新闻资讯</strong></div>
+    
+    <!-- 更多资讯按钮 -->
+    <div class="bt2">
+    <a href="###"><span class="GDZX">更多资讯</span></a>
+    </div> 
+    
+    <!-- 新闻1 --> 
+    <div class="news-info">
+                        
+    <a href="###">
+    <!-- 标题 -->
+    <h2 class="info-title" title="河南安徽等地仍有较强降雨南方大部闷热升级">
+    河南安徽等地仍有较强降雨南方大部闷热升级
+    </h2></a>
+                                          
+    <!-- 时间 -->
+    <span class="update-time">
+    2023-5-28
+    </span>
+     <!-- 新闻图 -->
+    <div class="news-imgs">
+    <img src="../imgs/新闻图/河南安徽.jpg">
+    </div>
+    <div class="underlines"></div>
+    
+    <!-- 新闻2 -->
+    <div class="news-info">
+    <a href="###">
+    <!--标题  -->
+    <h2 class="info-title" title="暴雨蓝色预警:7省市将现大到暴雨,安徽江苏部分地区...">
+    暴雨蓝色预警:7省市将现大到暴雨,安徽江苏部分地区...
+    </h2></a>
+                        
+    <!-- 时间 -->
+    <span class="update-time">
+    2023-5-28
+    </span>
+    <!-- 新闻图 -->
+    <div class="news-imgs">
+    <img src="../imgs/新闻图/2.jpg">
+    </div>
+    <div class="underlines"></div>
+    
+    <!-- 新闻3 -->
+    <div class="news-info">
+    <a href="###">
+    <!--标题  -->
+    <h2 class="info-title" title="大雾黄色预警:渤海黄海等部分海域将出现大雾">
+    大雾黄色预警:渤海黄海等部分海域将出现大雾
+    </h2></a>
+    <!-- 时间 -->
+    <span class="update-time">
+    2023-5-28
+    </span>
+    <!-- 新闻图 -->
+    <div class="news-imgs">
+    <img src="../imgs/新闻图/3.jpg">
+    </div>
+    <div class="underlines"></div>
+    
+     <!-- 新闻4 -->
+    <div class="news-info">
+    <a href="###">
+    <!-- 标题 -->
+    <h2 class="info-title" title="今明两天背景晴朗在线 最高气温将达31℃">
+    今明两天背景晴朗在线 最高气温将达31℃
+    </h2></a>
+    <!-- 时间 -->
+    <span class="update-time">
+    2023-5-28
+    </span>
+    <!-- 新闻图 -->
+    <div class="news-imgs">
+    <img src="../imgs/新闻图/4.jpg">
+    </div>
+    <div class="underlines"></div>
+    
+    <!-- 新闻5 -->
+    <div class="news-info">
+    <a href="###">
+     <!-- 标题 -->
+    <h2 class="info-title" title="河南安徽等地仍有较强降雨南方大部闷热升级">
+    河南安徽等地仍有较强降雨南方大部闷热升级
+    </h2></a>
+    <!-- 时间 -->
+    <span class="update-time">
+    2023-5-28
+    </span>
+    <!-- 新闻图 -->
+    <div class="news-imgs">
+    <img src="../imgs/新闻图/河南安徽.jpg">
+    </div>
+    <div class="underlines"></div>
+    
+                        
+                      </div>
+                </div>
+
+        </div>
+
+<script>
+      var swiper = new Swiper(".myswiper", {
+        loop: true, // 循环模式选项
+        spaceBetween: 30,
+        centeredSlides: true,
+        // 自动轮播
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        // 滚动条
+        scrollbar: {
+        el: '.swiper-scrollbar',
+        },
+        // 导航条左右
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      
+      var swiper = new Swiper(".mySwiper2", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+                // 导航条左右
+                navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        loop: true, // 循环模式选项
+        // 滚动条
+        scrollbar: {
+      el: '.swiper-scrollbar',
+        },
+      });
+
+    
+</script>
+</body>
+</html>

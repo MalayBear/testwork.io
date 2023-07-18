@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./图标/QWeather-Icons-1.3.2/QWeather-Icons-1.3.2/font/qweather-icons.css">
+    <link rel="stylesheet" href="./图标/fontawesome-free-6.4.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./css/整体简介框.css">
+    <link rel="stylesheet" href="./css/七天预报.css">
+    <link rel="stylesheet" href="./css/生活指数.css">
+    <link rel="stylesheet" href="./css/最后的介绍.css">
+    <link rel="stylesheet" href="./css/城市排名.css">
+    <link rel="stylesheet" href="./css/折线图.css">
+    <link rel="stylesheet" href="./css/导航栏.css">
+    <link rel="stylesheet" href="./css/头部搜索栏.css">
+    
+</head>
+<!-- <body style="background-color: #b4e9ff;"> -->
+    <script src="./js/float.js"></script>
+    <div class="Container">
+        <div class="navbar" style="min-height: 48px;">
+            <!-- 左侧 -->
+            <div class="navbar-left">
+                <!-- 网页logo -->
+                <div class="logo">
+                    <img src="https://img-home.csdnimg.cn/images/20201124032511.png" alt="">
+                </div>
+    
+            </div>
+    
+            <!-- 搜索框 -->
+            <div class="navbar-middle">
+                <div class="navbar-search">
+                    <input type="text" autocomplete="off" id="search" :placeholder="defaultText">
+                    <button>
+                        <span></span>
+                        <span>搜索</span>
+                    </button>
+                </div>
+            </div>
+    
+            <!-- 右侧导航栏 -->
+            <div class="navbar-right">
+                <div class="user">
+                    <script src="./js/登录.js"></script>
+                    <p><a href="./html/登录.html?runJS=true">登录</a></p>
+                </div>
+                <div class="install">
+                    <p><a href="#"></a></p>
+                </div>
+    
+            </div>
+        </div>
+        </div>
+        <div>
+            <router-view></router-view>
+        </div>
+        </div>
+        <!-- 以上卓part -->
+        <div class="underline"></div>
+  <!-- 导航栏2 -->
+  <div class="top2">
+    <div class="lead">
+    <ul>
+              <li><a href="C:\Users\win10\Desktop\天气\天气.html">首页</a></li>
+
+              <li><a href="https://www.msn.cn/zh-cn/weather/maps/radar/in-%E5%B9%BF%E4%B8%9C%E7%9C%81,%E8%82%87%E5%BA%86%E5%B8%82?loc=eyJsIjoi6byO5rmW5Yy6IiwiciI6IuW5v%2BS4nOecgSIsInIyIjoi6IKH5bqG5biCIiwiYyI6IuS4reWNjuS6uuawkeWFseWSjOWbvSIsImkiOiJDTiIsImciOiJ6aC1jbiIsIngiOiIxMTIuNTc0IiwieSI6IjIzLjE5NSJ9&weadegreetype=C&ocid=ansmsnweather">地图</a></li>
+      
+              <li><a href="./html/月报.html">月度预报</a></li>
+      
+              <li><a href="https://www.msn.cn/zh-cn/weather/maps/severeweather/in-%E5%B9%BF%E4%B8%9C%E7%9C%81,%E8%82%87%E5%BA%86%E5%B8%82?loc=eyJsIjoi6byO5rmW5Yy6IiwiciI6IuW5v%2BS4nOecgSIsInIyIjoi6IKH5bqG5biCIiwiYyI6IuS4reWNjuS6uuawkeWFseWSjOWbvSIsImkiOiJDTiIsImciOiJ6aC1jbiIsIngiOiIxMTIuNTc0IiwieSI6IjIzLjE5NSJ9&weadegreetype=C&ocid=ansmsnweather">天气预警</a></li>
+      
+              <li><a href="https://www.msn.cn/zh-cn/weather/records/in-%E5%B9%BF%E4%B8%9C%E7%9C%81,%E8%82%87%E5%BA%86%E5%B8%82?loc=eyJsIjoi6byO5rmW5Yy6IiwiciI6IuW5v%2BS4nOecgSIsInIyIjoi6IKH5bqG5biCIiwiYyI6IuS4reWNjuS6uuawkeWFseWSjOWbvSIsImkiOiJDTiIsImciOiJ6aC1jbiIsIngiOiIxMTIuNTc0IiwieSI6IjIzLjE5NSJ9&weadegreetype=C&ocid=ansmsnweather">气温雨量统计</a></li>
+      
+              <li><a href="https://www.msn.cn/zh-cn/weather/maps/airquality/in-%E5%B9%BF%E4%B8%9C%E7%9C%81,%E8%82%87%E5%BA%86%E5%B8%82?loc=eyJsIjoi6byO5rmW5Yy6IiwiciI6IuW5v%2BS4nOecgSIsInIyIjoi6IKH5bqG5biCIiwiYyI6IuS4reWNjuS6uuawkeWFseWSjOWbvSIsImkiOiJDTiIsImciOiJ6aC1jbiIsIngiOiIxMTIuNTc0IiwieSI6IjIzLjE5NSJ9&weadegreetype=C&ocid=ansmsnweather">空气质量</a></li>
+
+              <li><a href="##">节气知识</a></li>
+
+              <li><a href="##">更多资讯</a></li>
+
+    </ul>
+    </div>
+            <div class="clearfix"></div>
+            <div class="underline"></div>
+            <div class="clearfix"></div>
+       </div>
+       <!-- 只放了父盒子，子盒子自由发挥 -->
+
+             <!-- 城市名称 -->
+            <div class="headcontries">
+                <h2>肇庆市</h2>  
+            </div>
+            <!-- 大盒子 -->
+            <div class="Introduction">
+
+            <!-- 利用js更新实时时间 -->
+            <div class="time">
+              <div class="box"></div>
+               <script src="./js/简介.js"></script>
+            </div>
+
+            <!-- 空气指数 -->
+            <div class="bt">
+              <a href="###"><button class="TQZL">AQI优</button></a>
+          </div>
+
+            <!-- 天气图标 -->
+            <div class="photo">
+              <img src="./imgs/雨.png">        
+            </div>
+
+            <!-- 温度 -->
+            <div class="wendu">
+              <h2>31℃</h2>
+            </div>
+
+            <!-- 体感温度 -->
+            <div class="tigan">
+              <p>体感温度:31℃</p>
+            </div>
+
+            <!-- 天气情况 -->
+            <div class="tianqi">
+              <p>阵雨🌧</p>
+            </div>
+
+            <!-- 天气具体详情 -->
+            <div class="NavBox1">
+              <ul class="Nav1">
+                  <li >风度
+                    <p>东北风 3级</p>
+                  </li>
+                  <li >湿度
+                    <p>71%</p>
+                  </li>
+                  <li >能见度
+                    <p>29.2 公里</p>
+                  </li>
+                  <li >气压
+                    <p>1004 hPa</p>
+                  </li>
+                  <li >露点
+                    <p>24°</p>
+                  </li>
+              </ul>
+              </div>
+                      
+              <div class="clearfix" ></div>
+           
+              <div class="prediction">
+                <!-- 七天预报标题 -->
+                <div class="prediction-top">
+                    <div class="prediction-left">
+                        七天预告
+                    </div>
+                    <div class="prediction-right">
+                        <a href="#">
+                            查看月度预测
+                        </a>
+                    </div>
+                </div>
+                <!-- 七天预报内容 -->
+                <div class="prediction-content">
+                    <ul>
+                        <!-- 今天预报 -->
+                        <li class="ForecastToday">
+                            <button style="width: 230px;">
+                                <div class="ForecastTodayText">
+                                    <p>今天</p>
+                                </div>
+                                <div class="ForecastTodayImg">
+                                    <img src="https://assets.msn.cn/weathermapdata/1/static/weather/Icons/taskbar_v10/Condition_Card/SunnyDayV3.svg"
+                                        alt="">
+                                </div>
+                                <div class="ForecastTodayTem">
+                                    <div class="ForecastToday-1">
+                                        <span class="ForecastToday-1-1">35°</span>
+                                        <span class="ForecastToday-1-2">晴</span>
+                                    </div>
+                                    <div class="ForecastToday-2">
+                                        <span class="ForecastToday-2-1">26°</span>
+                                        <span class="ForecastToday-2-2"><span class="water"></span>0%</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </li>
+                        <!-- 未来预报 -->
+                        <li class="ForecastDays">
+                            <button style="width: 150px;">
+                                <div class="ForecastDaysText">
+                                    <p>29日周一</p>
+                                </div>
+                                <div class="ForecastDaysImg">
+                                    <img src="https://assets.msn.cn/weathermapdata/1/static/weather/Icons/taskbar_v10/Condition_Card/MostlyCloudyDayV2.svg"
+                                        alt="">
+                                </div>
+                                <div class="ForecastDaysTem">
+                                    <div class="ForecastDays-1">
+                                        <span class="ForecastDays-1-1">35°</span>
+                                    </div>
+                                    <div class="ForecastDays-2">
+                                        <span class="ForecastDays-2-1">25°</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </li>
+                        <li class="ForecastDays">
+                            <button style="width: 150px;">
+                                <div class="ForecastDaysText">
+                                    <p>30日周二</p>
+                                </div>
+                                <div class="ForecastDaysImg">
+                                    <img src="https://assets.msn.cn/weathermapdata/1/static/weather/Icons/taskbar_v10/Condition_Card/MostlyCloudyDayV2.svg"
+                                        alt="">
+                                </div>
+                                <div class="ForecastDaysTem">
+                                    <div class="ForecastDays-1">
+                                        <span class="ForecastDays-1-1">35°</span>
+                                    </div>
+                                    <div class="ForecastDays-2">
+                                        <span class="ForecastDays-2-1">26°</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </li>
+                        <li class="ForecastDays">
+                            <button style="width: 150px;">
+                                <div class="ForecastDaysText">
+                                    <p>31日周三</p>
+                                </div>
+                                <div class="ForecastDaysImg">
+                                    <img src="https://assets.msn.cn/weathermapdata/1/static/weather/Icons/taskbar_v10/Condition_Card/HeavyDrizzle.svg"
+                                        alt="">
+                                </div>
+                                <div class="ForecastDaysTem">
+                                    <div class="ForecastDays-1">
+                                        <span class="ForecastDays-1-1">34°</span>
+                                    </div>
+                                    <div class="ForecastDays-2">
+                                        <span class="ForecastDays-2-1">26°</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </li>
+                        <li class="ForecastDays">
+                            <button style="width: 150px;">
+                                <div class="ForecastDaysText">
+                                    <p>31日周三</p>
+                                </div>
+                                <div class="ForecastDaysImg">
+                                    <img src="https://assets.msn.cn/weathermapdata/1/static/weather/Icons/taskbar_v10/Condition_Card/HeavyDrizzle.svg"
+                                        alt="">
+                                </div>
+                                <div class="ForecastDaysTem">
+                                    <div class="ForecastDays-1">
+                                        <span class="ForecastDays-1-1">34°</span>
+                                    </div>
+                                    <div class="ForecastDays-2">
+                                        <span class="ForecastDays-2-1">26°</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </li>
+                        <li class="ForecastDays">
+                            <button style="width: 150px;">
+                                <div class="ForecastDaysText">
+                                    <p>31日周三</p>
+                                </div>
+                                <div class="ForecastDaysImg">
+                                    <img src="https://assets.msn.cn/weathermapdata/1/static/weather/Icons/taskbar_v10/Condition_Card/HeavyDrizzle.svg"
+                                        alt="">
+                                </div>
+                                <div class="ForecastDaysTem">
+                                    <div class="ForecastDays-1">
+                                        <span class="ForecastDays-1-1">34°</span>
+                                    </div>
+                                    <div class="ForecastDays-2">
+                                        <span class="ForecastDays-2-1">26°</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </li>
+                        <li class="ForecastDays">
+                            <button style="width: 150px;">
+                                <div class="ForecastDaysText">
+                                    <p>31日周三</p>
+                                </div>
+                                <div class="ForecastDaysImg">
+                                    <img src="https://assets.msn.cn/weathermapdata/1/static/weather/Icons/taskbar_v10/Condition_Card/HeavyDrizzle.svg"
+                                        alt="">
+                                </div>
+                                <div class="ForecastDaysTem">
+                                    <div class="ForecastDays-1">
+                                        <span class="ForecastDays-1-1">34°</span>
+                                    </div>
+                                    <div class="ForecastDays-2">
+                                        <span class="ForecastDays-2-1">26°</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+
+            <div></div>
+            <div class="Curve" id="Curve">
+              <script src="./js/anychart-bundle.min.js"></script>
+              <!-- 放在它后面 -->
+              <script src="./js/折线图.js"></script>
+            </div>
+            </div>
+            <!-- 卢part -->
+            <div class="Table">
+              <table>
+                <div class="Table"> <table> <tr> 
+                    <th>城市</th>
+                     <th>最高温度</th>
+                      <th>最低温度</th>
+                     </tr> <tr> 
+                        <td>北京</td>
+                        <td><span id="weather-tempB"></span></td> 
+                        <script src="./js/北京天气接口.js"></script>
+                        <script src="./js/demo.js"></script>
+                        <td id="weather-reportB"></td>
+                         </tr>
+                          <tr>
+                             <td>上海</td>
+                             <td><span id="weather-tempC"></span></td> 
+                             <script src="./js/上海天气接口.js"></script>
+                             <script src="./js/demo.js"></script>
+                             <td id="weather-reportC"></td>
+                </tr>
+                 <tr> 
+                    <td>广州</td>
+                    <td><span id="weather-temp"></span></td>                    
+                    <script src="./js/广州天气接口.js"></script>
+                <script src="./js/demo.js"></script>
+                     <td id="weather-report"></td>
+                 </tr> 
+                </table> 
+                </div>
+              </table>
+              <!-- 许part -->
+            </div>
+            <div class="clearfix"></div>
+            <link rel="stylesheet" href="./css/轮播图.css">
+            <script src="./js/轮播图.js"></script> 
+            <!-- 太阳月亮轮播图 -->
+            <div class="Swiper">
+              <script src="./js/太阳公转.js"></script>
+              <link rel="stylesheet" href="./css/太阳公转图.css">
+              <div class="RunSun swiper-item">
+              <div id="trajectory-sun" ></div>
+              <div id="sun"> </div> 
+          </div>
+          <div class="RunMoon swiper-item">
+            <script src="./js/月亮公转.js"></script>
+            <link rel="stylesheet" href="./css/月亮公转图.css">
+            <div id="trajectory-moon"></div>
+            <div id="moon"></div>
+           
+          </div>
+        </div>
+            </div>
+            <!-- 卢part -->
+
+            <div class="clear"></div>
+            <div class="Index">
+              <div class="LivingIndex">
+                <h3>生活指数</h3>
+                <div class="IndexItem">
+                  <i class="fas fa-shower"></i>
+                  <span>洗车指数</span>
+                  <p>适宜</p>
+                </div>
+                <div class="IndexItem">
+                  <i class="fas fa-thermometer-half"></i>
+                  <span>舒适度指数</span>
+                  <p>舒适</p>
+                </div>
+                <div class="IndexItem">
+                  <i class="fas fa-tshirt"></i>
+                  <span>穿衣指数</span>
+                  <p>适中</p>
+                </div>
+                <div class="IndexItem">
+                  <i class="fas fa-head-side-cough"></i>
+                  <span>感冒指数</span>
+                  <p>少发</p>
+                </div>
+                <div class="IndexItem">
+                  <i class="fas fa-running"></i>
+                  <span>运动指数</span>
+                  <p>适宜</p>
+                </div>
+                <div class="IndexItem">
+                  <i class="fas fa-suitcase"></i>
+                  <span>旅游指数</span>
+                  <p>适宜</p>
+                </div>
+                
+              </div>
+              
+
+
+                  <!-- 天气新闻资讯 -->
+                  <div class="Recommend">
+                    <div class="title"><strong>天气新闻资讯</strong></div>
+
+                  <!-- 更多资讯按钮 -->
+                    <div class="bt2">
+                      <a href="./html/新闻.html"><span class="GDZX">更多资讯</span></a>
+                    </div> 
+
+                    <!-- 新闻1 --> 
+                  <div class="news-info">
+                    <a href="###">
+
+                    <!-- 标题 -->
+                    <h2 class="info-title" title="河南安徽等地仍有较强降雨南方大部闷热升级">
+                    河南安徽等地仍有较强降雨南方大部闷热升级
+                    </h2>
+                    
+                    <!-- 时间 -->
+                    <span class="update-time">
+                    2023-5-28
+                    </span>
+                    <!-- 新闻图 -->
+                    <div class="news-imgs">
+                    <img src="./imgs/新闻图/河南安徽.jpg">
+                    </div></a>
+                    <div class="underlines"></div>
+
+                    <!-- 新闻2 -->
+                    <div class="news-info">
+                    <a href="###">
+                    <!--标题  -->
+                    <h2 class="info-title" title="暴雨蓝色预警:7省市将现大到暴雨,安徽江苏部分地区...">
+                    暴雨蓝色预警:7省市将现大到暴雨,安徽江苏部分地区...
+                    </h2></a>
+                    <!-- 时间 -->
+                    <span class="update-time">
+                    2023-5-28
+                    </span>
+                    <!-- 新闻图 -->
+                    <div class="news-imgs">
+                    <img src="./imgs/新闻图/2.jpg">
+                    </div>
+                    <div class="underlines"></div>
+
+                    <!-- 新闻3 -->
+                    <div class="news-info">
+                    <a href="###">
+                    <!--标题  -->
+                    <h2 class="info-title" title="大雾黄色预警:渤海黄海等部分海域将出现大雾">
+                    大雾黄色预警:渤海黄海等部分海域将出现大雾
+                    </h2>
+                  </a>
+                    <!-- 时间 -->
+                    <span class="update-time">
+                    2023-5-28
+                    </span>
+                    <!-- 新闻图 -->
+                    <div class="news-imgs">
+                    <img src="./imgs/新闻图/3.jpg">
+                    </div>
+                    <div class="underlines"></div>
+
+                    <!-- 新闻4 -->
+                    <div class="news-info">
+                    <a href="###">
+                    <!-- 标题 -->
+                    <h2 class="info-title" title="今明两天背景晴朗在线 最高气温将达31℃">
+                    今明两天背景晴朗在线 最高气温将达31℃
+                    </h2>
+                    <!-- 时间 -->
+                    <span class="update-time">
+                    2023-5-28
+                    </span>
+                    <!-- 新闻图 -->
+                    <div class="news-imgs">
+                    <img src="./imgs/新闻图/4.jpg">
+                    </div></a>
+                    <div class="underlines"></div>
+
+                    <!-- 新闻5 -->
+                    <div class="news-info">
+                    <a href="###">
+                    <!-- 标题 -->
+                    <h2 class="info-title" title="河南安徽等地仍有较强降雨南方大部闷热升级">
+                    河南安徽等地仍有较强降雨南方大部闷热升级
+                    </h2>
+                  </a>
+                    <!-- 时间 -->
+                    <span class="update-time">
+                    2023-5-28
+                    </span>
+                    <!-- 新闻图 -->
+                    <div class="news-imgs">
+                    <img src="./imgs/新闻图/河南安徽.jpg">
+                    </div>
+                  </div>
+                  </div>
+                    <div class="underlines"></div>
+
+                </div> 
+                  </div>
+                  </div>
+            </div>
+            </div>
+            <div></div>
+            
+            <!-- 卓，卢part -->
+            <div class="Ending">
+                <div class="Ending">
+            <div class="Ending-heading">
+                <h2>关于天气的详细介绍</h2>
+            </div>
+            <div class="Ending-description">
+                <p>在这里，您可以了解到关于当前的天气状况、未来几天的天气趋势以及各种高级气象数据。</p>
+            </div>
+            <div class="Ending-links">
+                <a href="#">当前天气</a>
+                <a href="#">未来天气趋势</a>
+                <a href="#">高级气象数据</a>
+            </div>
+</div>
+
+            </div>
+           
+      </div>    
+</body>
+</html>

@@ -1,0 +1,84 @@
+/* .underline
+{
+    width: 100%;
+    display: block;
+    border-color: #494848;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+/* 第二行导航内容 */
+.NavBox ul
+{
+    list-style: none;
+    float: left;       
+}
+.NavBox{
+    height: 63px;
+    font-size: 23px;
+    background-color:#ffffff;
+}
+.NavBox li:hover
+{
+    /* 鼠标悬停色 */
+    background-color: #e7edff;
+}
+.Nav li
+{
+    float: left;
+    color: rgb(0, 0, 0);
+    padding: 0 50px;
+    height: 63px;
+    line-height: 60px;
+}
+.Nav a
+{
+    padding: 0 20px;
+    height: 60px;
+    line-height: 60px;
+    display: block;
+    color: rgb(29, 28, 28);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;  
+} */
+/* 导航开始 */
+
+/* 第一行导航内容 */
+.dh img
+{
+    width: 100%;
+}
+/* 第二行导航内容 */
+.top2 ul{
+  list-style: none;
+  float: left;       
+}
+.top2{
+  height: 60px;
+  font-size: 23px;
+  background-color:#0A5BAC;
+  margin-left: 143px;
+  width: 81%;
+}
+.top2 li:hover{
+  /* 鼠标悬停色 */
+  background-color: rgba(216, 234, 244, 0.866);
+}
+.lead li{
+  float: left;
+  color: rgb(0, 0, 0);
+  padding: 0 20px;
+  height: 60px;
+  line-height: 80px;
+}
+.lead a{
+  padding: 0 20px;
+  height: 60px;
+  line-height: 60px;
+  display: block;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;  
+}
+/* 导航结束 */

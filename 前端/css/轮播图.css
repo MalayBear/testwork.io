@@ -1,0 +1,17 @@
+
+ .Swiper {
+    position: relative;
+    width: 900px;
+    height: 300px;
+    margin-top: 100px;
+    margin-left: 241px; 
+    z-index: 1;
+    overflow: hidden;
+  }
+.swiper-item 
+{
+        position: absolute;
+        width:600px;
+        height: 400px;
+        transition: 0.5s;
+} 

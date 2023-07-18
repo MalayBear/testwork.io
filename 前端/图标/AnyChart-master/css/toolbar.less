@@ -1,0 +1,156 @@
+/* Toolbar itself. */
+.anychart-toolbar {
+  background-color: #f7f7f7;
+  border: 1px solid #d5d5d5;
+  cursor: default;
+  font: normal 12px Verdana, sans-serif;
+  color: #7c868e;
+  padding: 2px;
+  position: relative;
+}
+
+/* 
+ * Buttons on toolbar both simple buttons and menu buttons.
+ * Used by anychart.ui.ToolbarButtonRenderer and anychart.ui.MenuButtonRenderer.
+ */
+.anychart-toolbar-button, .anychart-toolbar-menu-button {
+  margin: 0 2px;
+  border: 0;
+  padding: 2px 2px;
+  text-decoration: none;
+  vertical-align: middle;
+  list-style: none;
+  cursor: default;
+  outline: none;
+}
+
+.anychart-toolbar-button-inner-box, .anychart-toolbar-menu-button-inner-box {
+  padding: 3px 4px;
+}
+
+/* Buttons and Menu buttons on hover state. */
+.anychart-toolbar-button-hover, .anychart-toolbar-menu-button-hover {
+  background-color: #eee;
+}
+
+/* Active states, override hover. */
+.anychart-toolbar-menu-button-active,
+.anychart-toolbar-menu-button-open,
+.anychart-toolbar-button-active,
+.anychart-toolbar-button-checked,
+.anychart-toolbar-button-selected {
+  background-color: #ddd !important;
+}
+
+
+/* Dropdown style, adds arrow. */
+.anychart-toolbar-menu-button-dropdown {
+  margin-left: 3px;
+  padding-bottom: 1px;
+  width:0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #7c868e;
+  vertical-align: middle;
+}
+
+
+/*
+ * Styles used by anychart.ui.ToolbarSeparatorRenderer.
+ */
+.anychart-toolbar-separator {
+  margin: 0 2px;
+  border-left: 1px solid #d6d6d6;
+  border-right: 1px solid #f7f7f7;
+  padding: 0;
+  width: 0;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  vertical-align: middle;
+  line-height: normal;
+  font-size: 120%;
+  overflow: hidden;
+}
+
+/* Icons on toolbar buttons. */
+.anychart-toolbar-item-icon {
+  padding: 0 2px;
+  font-size: 13px;
+  color: #2485d0;
+
+}
+
+/* Buttons text. */
+.anychart-toolbar-item-text {
+  padding: 0 2px;
+}
+
+.anychart-toolbar-menu {
+  background-color: #f7f7f7;
+  border: 1px solid #d5d5d5;
+  cursor: default;
+  font: normal 12px Verdana, sans-serif;
+  color: #7c868e;
+
+  //-webkit-transition: opacity 0.218s;
+  //-moz-transition: opacity 0.218s;
+  //-o-transition: opacity 0.218s;
+  //transition: opacity 0.218s;
+
+  margin: 0;
+  outline: none;
+  padding: 6px 0;
+  position: absolute;
+  z-index: 1003;
+  line-height: normal;
+}
+
+.anychart-toolbar-menu .anychart-menuitem {
+  color: #7c868e;
+}
+
+.anychart-toolbar-menu-button-hover .anychart-toolbar-menu-button-dropdown,
+.anychart-toolbar-menu-button-open .anychart-toolbar-menu-button-dropdown {
+  border-top: 4px solid #000;
+  //transition: border-top 0s;
+}
+
+.anychart-toolbar-menu .anychart-menuitem i,
+.anychart-toolbar-menu .anychart-menuitem-content {
+  display: inline;
+  position: static;
+}
+
+.anychart-toolbar-menu .anychart-menuitem {
+  padding: 6px 5px;
+  padding-right: 8px;
+  border-style: none;
+}
+
+.anychart-toolbar-menu .anychart-submenu-arrow {
+  position: absolute;
+  right: 0;
+  top: 9px;
+  padding: 0 2px;
+}
+
+// It add some space between arrow sign and text.
+.anychart-menuitem-content {
+  margin-right: 1rem;
+}
+
+// Space for check mark.
+.anychart-option[role='menuitemradio'] {
+  padding-left: 1.5rem;
+}
+
+// Check mark sign.
+.anychart-option-selected .anychart-menuitem-checkbox:before {
+  content: '\2713';
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}

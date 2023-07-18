@@ -1,0 +1,171 @@
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    display: inline;
+}
+
+a { 
+    text-decoration: none;
+    color: rgb(5, 91, 62);
+
+}
+
+
+
+.monthly {
+    margin: 0 150px;
+    width: 1200px;
+    /* background: #c90a0a; */
+}
+
+/* 地区 */
+.MonthlyRegion p {
+    font-size: 22px;
+}
+
+/* 月份 */
+.MonthlyMonth ul li {
+    width: 100%;
+    height: 40px;
+    display: inline-block;
+    list-style: none;
+    list-style-type: none;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 15px;
+    width: calc((1236px - 88px) / 12);
+    margin: 10px 0;
+    background: #eee;
+    border-radius: 8px;
+
+}
+
+
+
+
+
+/* 月报概述 */
+.MonthlyForecast-top {
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+/* 礼拜的ul */
+.MonthlyForecast-date {
+    position: relative;
+    border: none;
+    width: 100%;
+    height: 20px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-weight: 400;
+    background: none;
+    margin-bottom: 10px;
+}
+
+/* 礼拜的li */
+.MonthlyForecast-date li {
+    display: inline-block;
+    list-style: none;
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: 600;
+    width: 120px;
+    margin-top: 10px;
+}
+
+/* 内容 */
+.MonthlyForecast-content {
+    margin: 0 120px;
+    position: relative;
+    border: none;
+    width: 80%;
+    height: 20px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    font-weight: 400;
+    background: none;
+    color: rgba(25, 24, 24, 0.3);
+}
+
+/* 内容的li */
+.MonthlyForecast .MonthlyForecast-content li {
+    display: inline-block;
+    list-style: none;
+    list-style-type: none;
+    width: 120px;
+    margin-top: 8px;
+    font-weight: 600;
+    text-align: center;
+    background: #eee;
+    border-radius: 8px;
+}
+
+/* li里面的父盒子 */
+.content-day {
+    position: relative;
+    /* box-sizing: border-box; */
+    border: none;
+    /* width: 100%; */
+    height: 85px;
+    font-weight: 400;
+    border-radius: 6px;
+    background: rgba(25, 24, 24, 0.3);
+    color: #FFFFFF;
+    /* display: inline-block; */
+}
+
+/* 日期 */
+.content-day-date {
+    position: absolute;
+    display: block;
+    top: 5px;
+    left: 0;
+    margin-left: 8px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* 本月天气图标 */
+.content-day-img img {
+    margin-top: 8px;
+}
+
+/* 非本月天气图标 */
+.content-day-imgla img {
+    opacity: 0.5;
+    margin-top: 8px;
+}
+
+/* 气温 */
+.content-day-3-1,
+.content-day-3-2 {
+    display: inline-block;
+    font-size: 15px;
+    margin: 0 3px;
+}
+
+/* 非当月 */
+.month {
+    /* background: #c6c6c3; */
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+}
+.content-day:hover{
+    background: #000;
+}

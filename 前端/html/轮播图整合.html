@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swiper</title>
+</head>
+<style>
+     
+
+</style>
+<body>
+  <link rel="stylesheet" href="./css/轮播图.css">
+  <script src="./js/轮播图.js"></script> 
+  <div class="Swiper">
+        <script src="./js/太阳公转.js"></script>
+        <link rel="stylesheet" href="./css/太阳公转图.css">
+        <div class="RunSun swiper-item">
+        <div id="trajectory-sun" ></div>
+        <div id="sun"> </div> 
+    </div>
+    <div class="RunMoon swiper-item">
+      <script src="./js/月亮公转.js"></script>
+      <link rel="stylesheet" href="./css/月亮公转图.css">
+      <div id="trajectory-moon"></div>
+      <div id="moon"></div>
+     
+    </div>
+  </div>
+  <div class=" prev" tabindex="1" onmouseenter="enter()" onmouseleave="leave()" onclick="prev()"><img src="./img/left.png"></div>
+  <div class=" next" tabindex="1" onmouseenter="enter()" onmouseleave="leave()" onclick="next()" ><img src="./img/right.png"></div>
+    
+    
+
+
+    
+</body>
+</html>

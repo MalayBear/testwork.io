@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/登录.css">
+    <title>登录界面</title>
+    <script src="../js/登录.js">
+    </script>
+</head>
+<body>
+    <!--1， 登录页面 -->
+    <div class="Box">
+    <div class="loginBox">
+        <!-- <div class="choose"style="margin=3px">
+            <text class="chooseLogin" onclick="choose('login')" style="cursor: pointer;">登录</text>
+             <text style="text-align: center;"></text> -->
+            <!-- <text class="chooseRegister" onclick="choose('register')"style="cursor: pointer;">注册</text>
+        </div>  -->
+    <form action="../gouwu.html" method="post" class="login">
+        <h1>Login</h1>
+        <input type="text"  class="loginUserName" value="" placeholder="请输入用户名" >
+        <input type="password"  class="loginPassword" value="" placeholder="请输入密码6-10位数">
+        <button type="button" onclick="login()" style="color: black">登录</button>
+    </form>
+</div>
+
+    <!-- 2，注册页面 -->
+    <div class="chooseRegister" onclick="choose('register')">
+        <div class="registerbutton"  style="cursor: pointer;">
+            <p>注册</p> 
+        </div>
+       </div>
+    <form class="register" >
+        <div class="form">
+            <h1>register</h1>
+            <div>
+            <input class="registerUserName" name="registerUserName" type="text" placeholder="请输入用户名...">
+        </div>
+        
+        <div>
+           <input class="registerPassword"  type="password" name="registerPassword" type="text" placeholder="请输入密码6-10位数...">
+        </div>
+        <div>
+            <input type="password" class="registerPassword2" name="registerPassword2" type="text" placeholder="确认密码...">
+        </div>
+        <button type="button" onclick="register()" style="color: black">注册</button>
+        </div>
+    </form>
+</div>
+</div>
+
+
+</body>
+</html>

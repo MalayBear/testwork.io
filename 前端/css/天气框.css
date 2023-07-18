@@ -1,0 +1,434 @@
+.body{
+    font-family: Verdana, Arial, Helvetica, sans-serif,"\5b8b\4f53";
+    background:linear-gradient(2deg, #9edfff, #fff6e4);
+}
+  /* 大盒子 */
+  .Container {
+    padding: 10px;
+  }
+  /* 清除浮动 */
+  .clearfix:after 
+  {
+    content: "";
+    display: table;
+    clear: both;
+   }
+   /* 搜索框，logo */
+  .Logo,.Search {
+    float: left;
+    background-color: #e0e0e0;
+  }
+  /* 留给卢 */
+  .Item
+  {
+    float: right;
+    background-color: #e0e0e0;
+    margin-left: 20px;
+  }
+  .Logo{width: 50px; height: 40px; }
+  .Search{width:200px;height: 42px;margin-left: 500px;}
+  .Item{width: 50px; height: 40px;}
+ 
+/* 导航栏大盒子和li */
+  .NavBox .Nav li
+{
+  position: static;
+  flex: 1;
+  width: 20px;
+  height: 25px;
+  margin: 0px 10px;
+  background-color: blue;
+  list-style: none;
+}
+/* ul的盒子 */
+  .Nav
+  {   display: flex;
+      flex-direction: row;
+      padding: 10px;
+      margin-left: 10px;
+      width: 600px;
+      /* height:30px ; */
+      background-color:skyblue;
+  }
+
+/* 大盒子 */
+.Introduction
+{
+  width: 1130px;
+  height: 429px;
+  margin-top: 60px;
+  margin-left: 202px;
+  background: linear-gradient(2deg, #9edfff, #fff6e4);
+  border-radius: 10px;
+}
+
+/* 标题城市 */
+.headcontries
+{
+    width: 280px;
+    height: 47px;
+    text-align: center;
+    float: left;
+    margin-left: 267px;
+    margin-top: 93px;
+    color: #646363;
+}
+
+
+/* 时间 */
+.time
+{   
+    width: 280px;
+    height: 47px;
+    text-align: center;
+    float: left;
+    margin-left: 500px;
+    margin-top: 31px;
+    color: #575151;
+    font-size: 20px;
+}
+
+/* 空气指数AQI */
+.bt{
+	margin-top: 30px;
+}
+.bt button{
+    display: inline-block;
+    width: 89px;
+    height: 31px;
+    border-radius: 30px;
+    margin-left: 946px;
+    margin-top: 0px;
+    font-weight: 300px;
+}
+.bt .TQZL{
+    background-color: #139a0082;
+    color: #000000;
+    font-size: 17px;
+}
+
+/* 天气图标盒子 */
+ .photo
+{
+    width: 199px;
+    height: 193px;
+    margin-top: -22px;
+    margin-left: 53px;
+}
+
+/* 温度 */
+.wendu
+{
+    width: 98px;
+    height: 123px;
+    margin-left: 270px;
+    margin-top: -183px;
+    font-size: 35px;
+    color: #000000;
+}
+
+/* 体感温度 */
+.tigan
+{  
+  width: 138px;
+  height: 47px;
+  margin-top: -24px;
+  margin-left: 389px;
+  font-size: 20px;
+  color: #000000;
+  }
+
+/* 天气情况 */
+.tianqi
+{
+  width: 80px;
+  height: 30px;
+  margin-left: 274px;
+  margin-top: -53px;
+  font-size: 24px;
+  color: #000000;
+}
+
+/* 天气具体情况 */
+/* li */
+.NavBox1 .Nav1 li
+{
+    position: static;
+    flex: 1;
+    width: 20px;
+    height: 54px;
+    margin: 0px 10px;
+    margin-top: 0px;
+    list-style: none;
+    color: #000000;
+    margin-top: 8px;
+    margin-left: 65px;
+    font-size: 18px;
+  }
+/* ul的盒子 */
+.Nav1
+{
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  margin-left: 36px;
+  width: 1034px;
+  height: 69px;
+  margin-top: 91px;
+  border-radius: 26px;
+  background-color: rgba(200, 197, 197, 0.28);
+}
+
+ /* 一周天气大盒子 */
+.DayBox
+{
+    /* width: 800px; */
+    height: 200px;
+    margin-top: 88px;
+    background-color: rebeccapurple;
+}
+
+/* 一周天气小盒子 */
+.DayBox>div
+{   
+    float: left;
+    width: 100px;
+    height: 200px;
+    margin-left: 10px;
+    background-color: #e0e0e0;   
+}
+
+/* 折线图 */
+.Curve
+{
+    float: left;
+    width: 700px;
+    height: 400px;
+    margin-left: -215px;
+    margin-top: 20px;
+     background-color: pink;
+}
+
+/* 城市天气排名 */
+.Table
+{ 
+    float: right;
+    width: 500px;
+    height: 400px;
+    margin-top: 20px;
+    background-color: peru;
+}
+
+
+/* 轮播图 */
+.Swiper
+{
+    width: 900px;
+    height: 300px;
+    margin-top: 60px;
+    margin-left: 37px;
+    background-color: bisque;
+}
+
+/* 大盒子 */
+.Index
+{ 
+    position: relative;
+    width: 1200px;  
+    height: 860px;
+    padding-left: 10px;
+    margin-left: -117px;
+    margin-top: 20px;
+    background-color: #f6fcff;         
+}
+
+
+/* 生活指数 */
+.LivingIndex
+{
+    position: absolute;
+    width: 527px;
+    height: 604px;
+    top: 59px;
+    background-color: rgb(160, 98, 218);
+    left: 68px;
+}
+/* 生活指数标题 */
+.title2
+{
+    width: 120px;
+    height: 43px;
+    background-color: #f6fcff;
+    margin-top: -44px;
+    font-size: 28px;
+    margin-left: 187px;
+}
+.LanMu
+{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 260px;
+    height: 0px;
+    background-color: #9edfff;
+}
+.LanMu2
+{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 256px;
+    height: 496px;
+    left: 271px;
+}
+/* 说明 */
+.insides1
+{
+    width: 257px;
+    height: 84px;
+    background-color: #ffeded;
+    margin-bottom: 20px;
+}
+.insides2
+{
+    width: 257px;
+    height: 84px;
+    background-color: #ffcaca;
+    margin-bottom: 20px;
+}
+.insides3
+{
+    width: 257px;
+    height: 84px;
+    background-color: #ffbdbd;
+    margin-bottom: 20px;
+}
+.insides4
+{
+    width: 257px;
+    height: 84px;
+    background-color: #ff6c6c;
+    margin-bottom: 20px;
+}
+.insides5
+{
+    width: 257px;
+    height: 84px;
+    background-color: #8c2121;
+    margin-bottom: 20px;
+}
+.insides6
+{
+    width: 257px;
+    height: 84px;
+    background-color: #300707;
+    margin-bottom: 20px;
+}
+/* 天气新闻框架 */
+.Recommend
+{
+    position: absolute;
+    left: 583px;
+    width: 510px;
+    height: 762px;
+    top: 20px;
+    margin-left: 100px;
+    margin-top: 36px;
+    background-color: rgb(255, 255, 255)
+}
+
+/* 大标题 */
+.title
+{
+    width: 207px;
+    height: 43px;
+    background-color: #f6fcff;
+    margin-top: -42px;
+    font-size: 28px;
+    margin-left: 112px;
+}
+
+/* 新闻详情 */
+.news-info
+{
+    width: 500px;
+    height: 120px;
+    background-color: #ffffff;
+    margin-top: 21px;
+}
+
+/* 新闻标题 */
+.info-title
+{
+    font-size: 20px;
+    height: 85px;
+    line-height: 41px;
+    margin-bottom: 1px;
+    width: 304px;
+}
+
+/* 时间 */
+.update-time
+{
+    width: 30px;
+    height: 50px;
+    color: #d2cdcd;
+}
+
+/* 新闻图 */
+.news-imgs
+{
+    width: 100%;
+}
+.news-imgs img
+{
+    float: right;
+    width: 29%;
+    height: 96px;
+    margin-top: -111px;
+
+}
+
+.news-info a
+{
+    text-decoration: none;
+    color: #000000;
+}
+/* 分界线 */
+.underlines
+{
+    width: 100%;
+    margin-bottom: 20px;
+    display: block;
+    border-color: #e1dddd;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    margin-top: 10px;
+}
+
+/* 按钮 */
+.bt2
+{
+	margin-top: -40px;
+}
+.bt2 .GDZX
+{
+    display: inline-block;
+    width: 113px;
+    line-height: 41px;
+    margin-left: 370px;
+    text-align: center;
+    margin-top: -112px;
+    border-radius: 50px;
+    background-color: #a3cfff;
+}
+.GDZX:hover
+{
+    background-color: rgba(221, 204, 240, 0.866);
+}
+.bt2 a
+{
+    color: #000000;
+    font-size: 19px;
+}
+

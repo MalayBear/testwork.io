@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/头部搜索栏.css">
+</head>
+
+<body>
+    <!-- 头部导航栏 -->
+    <div class="navbar" style="min-height: 48px;">
+        <!-- 左侧 -->
+        <div class="navbar-left">
+            <!-- 网页logo -->
+            <div class="logo">
+                <img src="https://img-home.csdnimg.cn/images/20201124032511.png" alt="">
+            </div>
+
+        </div>
+
+        <!-- 搜索框 -->
+        <div class="navbar-middle">
+            <div class="navbar-search">
+                <input type="text" autocomplete="off" id="search" :placeholder="defaultText">
+                <button>
+                    <span></span>
+                    <span>搜索</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- 右侧导航栏 -->
+        <div class="navbar-right">
+            <div class="user">
+                <p><a href="#">登录</a></p>
+            </div>
+            <div class="install">
+                <p><a href="#"></a></p>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <div>
+        <router-view></router-view>
+    </div>
+    </div>
+</body </html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+       #chart 
+       {
+        position: relative;
+        width: 530px;
+        height: 300px;
+        margin-left: 30px;
+        margin-top: 100px;
+        border: 1px solid rgb(156, 152, 152);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+       
+       }
+
+      .x-axis
+      {
+        position: absolute;
+        /* float: left; */
+        left: -35px;
+        bottom: -23px;
+        width: 100%;
+      }
+      .x-axis span
+      {
+        margin-left: 67px;
+      }
+
+    .y-axis 
+    {
+      position: absolute;
+      text-align: right;
+      left: -50px;
+      top: 0;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+  .bar 
+  {
+    position: relative;
+    width: 45px;
+    margin-left: 10px;
+    background-color: rgb(126, 142, 225);
+    cursor: pointer;
+    transition: 0.2s;
+    
+    
+  }
+
+  .bar:hover 
+  { 
+    /* 不透明度 */
+    opacity: 0.8;
+    background-color: rgb(196, 222, 244);
+  }
+
+    .data-label
+  {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+  }
+
+
+    </style>
+   <div id="chart">
+    <div class="x-axis">
+      <!-- <span class="span">1</span>
+      <span>2</span>
+      <span>3</span>
+      <span>4</span>
+      <span>5</span>
+      <span>6</span>
+      <span>7</span> -->
+    </div>
+    <div class="y-axis">
+      <!-- <span>60</span>
+      <span>50</span>
+      <span>40</span>
+      <span>30</span>
+      <span>20</span>
+      <span>10</span>
+      <span>0</span> -->
+    </div>
+  </div>
+  
+    <script>
+          var data = [10, 20, 30, 40, 50, 60,70] 
+          var yAxisData =[10, 30, 50, 70,80,100,120]//数据
+
+var chartContainer = document.getElementById("chart")
+var xAxis = document.querySelector(".x-axis")
+var yAxis = document.querySelector(".y-axis")
+//querySelector可以CSS选择器字符串来获取匹配的第一个元素
+
+//添加x轴坐标
+// for (let i = 0; i <= data.length; i++) {
+//   var span = document.createElement("span")
+//   //创建一个span节点
+//   span.innerText = i + 1 
+//   xAxis.appendChild(span)
+ 
+//   //把span的数据放在坐标轴的容器中
+// }
+// //添加y轴坐标
+
+for (let i = 0; i < yAxisData.length; i++) {
+  var span = document.createElement("span")
+  span.innerText = yAxisData[i]
+  yAxis.appendChild(span)
+}
+//绘制柱状图
+for (let i = 0; i <  data.length; i++) {
+  var bar = document.createElement("div") //创建柱形图
+  bar.classList.add("bar") //为柱形图添加类名
+  bar.style.height = `${data[i]}px` //设置柱形图高度
+
+  //添加数据标签
+  const dataLabel = document.createElement("div")
+  dataLabel.classList.add("data-label")
+  dataLabel.innerText = data[i]
+  bar.appendChild(dataLabel)
+
+  //添加鼠标悬停事件
+  //鼠标悬停的事件监听器,"mouseover" 则是一个表示鼠标悬停事件的字符串参数
+  bar.addEventListener("mouseover", () => {
+    dataLabel.style.display = "block"
+  })
+
+  //添加鼠标移出事件
+  bar.addEventListener("mouseout", () => {
+    dataLabel.style.display = "none"
+  })
+
+  chartContainer.appendChild(bar) //将柱形图添加到容器中
+}
+//在x轴添加名字
+var xLabel = document.createElement("div")
+xLabel.innerText = "  "
+xLabel.style.position = "absolute"
+xLabel.style.bottom = "0"
+xLabel.style.left = "400"
+xLabel.style.right = "0"
+// 将 x 轴容器添加到图表容器中
+chartContainer.appendChild(xLabel)
+
+//在y轴添加名字
+var yLabel = document.createElement("div")
+yLabel.innerText = "降雨量/mm"
+yLabel.style.position = "absolute"
+yLabel.style.top = "0"
+yLabel.style.left = "0"
+// yLabel.style.transform = "rotate(-90deg)"
+yLabel.style.transformOrigin = "left bottom"
+chartContainer.appendChild(yLabel)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,347 @@
+  /* 样式 */
+  *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Swiss 721 Rounded",sans-serif;
+    
+    
+    }
+    /* 导航开始 */
+    
+    /* 第一行导航内容 */
+    .dh img
+    {
+        width: 100%;
+    }
+    /* 第二行导航内容 */
+    .top2 ul{
+      list-style: none;
+      float: left;       
+    }
+    .top2{
+      height: 60px;
+      font-size: 23px;
+      background-color:#0A5BAC;
+      margin-left: 143px;
+      width: 81%;
+    }
+    .top2 li:hover{
+      /* 鼠标悬停色 */
+      background-color: rgba(216, 234, 244, 0.866);
+    }
+    .lead li{
+      float: left;
+      color: rgb(0, 0, 0);
+      padding: 0 20px;
+      height: 60px;
+      line-height: 80px;
+    }
+    .lead a{
+      padding: 0 20px;
+      height: 60px;
+      line-height: 60px;
+      display: block;
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 600;  
+    }
+    /* 导航结束 */
+    
+    
+    /* 轮播图区域样式开始 */
+    .swiper{
+      position: relative;
+      width: 600px;
+      height:680px            
+    }
+      .swiper {
+      width: 81%;
+      height: 97%;
+      background-color: #fff;
+      }
+    
+      .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+    
+        /* 幻灯片文本垂直居中 */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+    
+      .swiper-slide img {
+      display: block;
+      width: 1300px;
+      height: 680px;
+      object-fit: cover;
+      }
+      /* 轮播图区域结束 */
+    
+    
+      /* 商品区域 */
+      /* 小标题 */
+      .new{
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.18em;
+        font-weight: 500;
+        margin-top: 39px;
+      }
+      .new a{
+       color: #000;
+       text-align: center; 
+      } 
+      .underline1{
+      width: 100%;
+      margin-bottom: 20px;/* 与下边相隔距离 */ 
+      display: block;
+      border-color: #000;
+      border-bottom-width: 1px;
+      /* solid定义实线 */
+      border-bottom-style: solid; 
+      }
+    
+      .new1{
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.18em;
+        font-weight: 500;
+        margin-left: 638px;
+      }
+      .new1 a{
+       color: #000; 
+      } 
+      .underline2{
+      width: 100%;
+      margin-bottom: 20px;/* 与下边相隔距离 */ 
+      display: block;
+      border-color: #000;
+      border-bottom-width: 1px;
+      /* solid定义实线 */
+      border-bottom-style: solid; 
+      }
+      .underline3{
+      width: 100%;
+      margin-bottom: 20px;/* 与下边相隔距离 */ 
+      display: block;
+      border-color: #000;
+      border-bottom-width: 1px;
+      /* solid定义实线 */
+      border-bottom-style: solid; 
+      }
+    
+      /* 多张轮播图 */
+    .Myswiper2 {
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+    
+     /* 幻灯片垂直居中 */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align:center;
+      -ms-flex-align:center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    .swiper-slide img {
+      display: block;
+      width: 68%;
+      height: 97%;
+      object-fit: cover;
+    }
+    /* 中间新闻 */
+    .nn1
+    {
+        padding-left: 305px;
+        margin-top: 27px;
+    }
+    /* 大盒子 */
+    .probig
+    {
+        width: 1222px;
+        height: 729px;
+        background-color: #ffffff;
+        margin-left: 153px;
+        margin-top: -56px;
+    }
+    
+    /* 节气 */
+    .GuangGao
+    {
+        margin-left: 42px;
+    }
+    /* 左边新闻 */
+    .leftnews
+    {
+        width: 554px;
+        height: 727px;
+        background-color: #ffffff;
+        margin-left: 41px;
+        margin-top: 103px;
+    }
+    /* 里面的新闻 */
+    .inside
+    {
+        padding: 0 40px;
+        line-height: 66px;
+    }
+    .inside h2
+    {
+        color: #0A5BAC;
+    }
+    .inside a
+    {
+        /* text-decoration: none; */
+        color: #000;
+        font-size: 20px;
+    }
+    .inside a:hover
+    {
+        color: #ffa825;
+    }
+    .line
+    {
+        margin-left: 550px;
+        margin-top: -703px;
+        border-right: 1px dashed black;
+        height: 721px;
+        width: 1px;
+    }
+    
+    /* 天气新闻框架 */
+    .Recommend
+    {
+        position: absolute;
+        left: 583px;
+        width: 510px;
+        height: 716px;
+        top: 20px;
+        margin-left: 221px;
+        margin-top: 971px;
+        background-color: rgb(255, 255, 255)
+    }
+    
+    /* 大标题 */
+    .title
+    {
+        width: 207px;
+        height: 43px;
+        background-color: #f6fcff;
+        margin-top: 13px;
+        font-size: 24px;
+        margin-left: -1px;
+    }
+    
+    /* 新闻详情 */
+    .news-info
+    {
+        width: 500px;
+        height: 120px;
+        background-color: #ffffff;
+        margin-top: 21px;
+    }
+    
+    /* 新闻标题 */
+    .info-title
+    {
+        font-size: 20px;
+        height: 85px;
+        line-height: 41px;
+        margin-bottom: 1px;
+        width: 304px;
+    }
+    
+    /* 时间 */
+    .update-time
+    {
+        width: 30px;
+        height: 50px;
+        color: #d2cdcd;
+    }
+    
+    /* 新闻图 */
+    .news-imgs
+    {
+        width: 100%;
+    }
+    .news-imgs img
+    {
+        float: right;
+        width: 29%;
+        height: 96px;
+        margin-top: -111px;
+    
+    }
+    
+    .news-info a
+    {
+        text-decoration: none;
+        color: #000000;
+    }
+    .news-info a:hover
+    {
+        color: #ffa825;
+    }
+    /* 分界线 */
+    .underlines
+    {
+        width: 100%;
+        margin-bottom: 20px;
+        display: block;
+        border-color: #e1dddd;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        margin-top: 10px;
+    }
+    
+    /* 按钮 */
+    .bt2
+    {
+        margin-top: -40px;
+    }
+    .bt2 .GDZX
+    {
+        display: inline-block;
+        width: 113px;
+        line-height: 41px;
+        margin-left: 370px;
+        text-align: center;
+        margin-top: -112px;
+        border-radius: 50px;
+        background-color: #a3cfff;
+    }
+    .GDZX:hover
+    {
+        background-color: rgba(221, 204, 240, 0.866);
+    }
+    .bt2 a
+    {
+        color: #000000;
+        font-size: 19px;
+    }
